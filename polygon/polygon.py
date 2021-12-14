@@ -110,10 +110,12 @@ class PolygonSequence:
         """A polygon that has the highest area:perimeter ratio is denoted as the maximum efficiency polygon.\
         This function finds the polygon which has the maximum efficiency among all the others within the sequence."""
 
-        print("Maximum efficient polygon")
-        apr_list = []
+        apr_list = [0, 0, 0]
         for idx in range(3, self._maxn):
             p = Polygon(idx, self._r)
             area_perimeter_ratio = p.area / p.perimeter
             apr_list.append(area_perimeter_ratio)
-        return max(apr_list)
+        max_eff = max(apr_list)
+        print("Maximum efficient polygon: ", apr_list.index(max_eff))
+        print("Max efficiency: ", max_eff)
+        return max_eff
