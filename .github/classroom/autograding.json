@@ -3,7 +3,7 @@
     {
       "name": "test-polygon",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest -vv",
+      "run": "pytest polygon/test-polygon.py",
       "input": "",
       "output": "",
       "comparison": "included",
