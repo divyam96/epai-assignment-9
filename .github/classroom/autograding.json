@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "test_session3",
+      "name": "test-polygon",
       "setup": "sudo -H pip3 install pytest",
       "run": "pytest -vv",
       "input": "",
